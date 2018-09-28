@@ -96,6 +96,9 @@ function autoStance() {
         if (game.global.challengeActive == 'Lead') {
             enemyDamage *= (1 + (game.challenges.Lead.stacks * 0.04));
         }
+        if (game.global.challengeActive == 'Corrupted') {
+            enemyDamage *= 3
+        }
         if (game.global.challengeActive == 'Watch') {
             enemyDamage *= 1.25;
         }
